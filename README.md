@@ -28,8 +28,60 @@ Silakan ikuti panduan terperinci yang terdapat dalam file utama:
 
 ---
 
-SEE ATTACHMENTS LINK di GRUP BELAJAR: 
-Panduan Setup (Conda dan UV Virtual Environments).html 📑
+### Panduan Setup (Conda dan UV Virtual Environments).html 📑
+
+ ####Instalasi Anaconda
+#####1.1 Mengunduh Anaconda
+Apa: Anaconda adalah distribusi Python yang menyertakan ratusan paket siap pakai, ideal untuk analisis data dan komputasi ilmiah.
+
+Kenapa: Mengunduh Anaconda memberikan akses ke alat-alat penting untuk Data Science tanpa instalasi paket manual. Ini memastikan kompatibilitas dan menghemat waktu.
+
+Do and Don'ts:
+
+Do: Pilih Python 3.12 untuk kompatibilitas maksimal.
+Don't: Hindari versi 32-bit kecuali perangkat Anda tidak mendukung 64-bit.
+Langkah-langkah:
+
+Kunjungi https://www.anaconda.com/download.
+Pilih penginstal: Windows Python 3.12 64-Bit Graphical Installer (921.3MB).
+Simpan file di Desktop atau folder Unduhan.
+#####1.2 Proses Instalasi
+Apa: Instalasi melibatkan menjalankan file penginstal dan mengatur konfigurasi sistem.
+
+Kenapa: Instalasi yang benar memungkinkan Anaconda terintegrasi dengan sistem, sehingga perintah Conda dan Python dapat diakses dari terminal.
+
+Do and Don'ts:
+
+Do: Centang opsi untuk menambahkan Anaconda ke PATH.
+Don't: Jangan ubah lokasi instalasi default tanpa alasan kuat.
+Langkah-langkah:
+
+Klik dua kali Anaconda3-2024.10-1-Windows-x86_64.exe.
+Klik "Next" pada layar sambutan.
+Setujui syarat lisensi.
+Pilih "Just Me (recommended)".
+Gunakan lokasi default (C:\Users\NAMA_ANDA\anaconda3).
+Centang:
+✓ Tambahkan Anaconda3 ke PATH.
+✓ Jadikan Anaconda3 sebagai Python 3.12 default.
+Klik "Install" dan tunggu selesai.
+Peringatan: Jika lupa mencentang "Tambahkan ke PATH", Anda harus mengatur PATH secara manual.
+#####1.3 Verifikasi
+Apa: Verifikasi memastikan Anaconda terinstal dan dapat diakses.
+
+Kenapa: Ini mendeteksi masalah seperti PATH yang salah, memungkinkan perbaikan dini.
+
+Do and Don'ts:
+
+Do: Buka terminal baru untuk menerapkan perubahan PATH.
+Don't: Jangan abaikan pesan kesalahan.
+Langkah-langkah:
+
+Buka Command Prompt.
+Ketik dan eksekusi:
+conda --version
+Output seperti conda 24.1.0 menunjukkan keberhasilan.
+Keberhasilan: Nomor versi mengonfirmasi instalasi berhasil.
 
 
 
