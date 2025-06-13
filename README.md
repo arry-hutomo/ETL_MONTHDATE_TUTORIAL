@@ -2,7 +2,7 @@
 ----
 ## Intro 🚀
 
-**Anaconda** merupakan platform distribusi project data science, machine leaning, dan AI dalam bahasa pemrograman pyhton dan R. Sedangkan, **Conda** manajer paket dan lingkungan open-source yang merupakan bagian inti dari Anaconda. Meskipun sering dikaitkan dengan Anaconda, Conda juga bisa digunakan secara mandiri (misalnya melalui Miniconda, versi minimal Anaconda). Sementara itu, **UV** merupakan manajer paket Python modern yang relatif baru, dibangun dengan bahasa Rust. Berikut perdebaan  ketiganya:
+**Anaconda** merupakan platform distribusi project data science, machine leaning, dan AI dalam bahasa pemrograman pyhton dan R. Sedangkan, **Conda** manajer paket dan lingkungan open-source yang merupakan bagian inti dari Anaconda. Meskipun sering dikaitkan dengan Anaconda, Conda juga bisa digunakan secara mandiri (misalnya melalui Miniconda, versi minimal Anaconda). Sementara itu, **UV** merupakan manajer paket Python modern yang relatif baru, dibangun dengan bahasa Rust. Berikut perbedaan ketiganya:
 
 ![perbandingan](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/perbedaan%20anaconda%2C%20conda%2C%20UV.png)
 
