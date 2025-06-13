@@ -1,12 +1,12 @@
 # Setup Anaconda, Conda, dan UV
 ----
-## Intro 🚀
+## 🚀 Intro 
 
 **Anaconda** merupakan platform distribusi project data science, machine leaning, dan AI dalam bahasa pemrograman pyhton dan R. Sedangkan, **Conda** manajer paket dan lingkungan open-source yang merupakan bagian inti dari Anaconda. Meskipun sering dikaitkan dengan Anaconda, Conda juga bisa digunakan secara mandiri (misalnya melalui Miniconda, versi minimal Anaconda). Sementara itu, **UV** merupakan manajer paket Python modern yang relatif baru, dibangun dengan bahasa Rust. Berikut perbedaan ketiganya:
 
 ![perbandingan](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/perbedaan%20anaconda%2C%20conda%2C%20UV.png)
 
-## Kenapa Harus Ketiganya? 🌱
+## 🌱 Kenapa Harus Ketiganya? 
 ### 1. Ketiganya open-source.
 ### 2. Anaconda menjadi pilihan karena ia menyediakan fondasi yang kokoh dan komprehensif library esensial yang lengkap.
 ### 3. Conda mampu mengelola semua dependensi ini secara terpadu. 
@@ -15,9 +15,10 @@
 
 ----
 
-## Langkah-langkah Setup ⚙️
+## ⚙️ Langkah-langkah Setup 
 
 ### Setup Anaconda
+---
 Kamu bisa mengunduh instaler anaconda di web anaconda
 ![web_anaconda](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/web%20anaconda.png)
 
@@ -56,7 +57,10 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 
 ![berhasil](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/verifikasi%20anaconda.png)
 
+----
+
 ### Setup (Aktivasi) Conda
+----
 #### A. Membuat lingkungan baru Conda
 ##### Apa: Lingkungan Conda merupakan ruang kerja sendiri untuk suatu proyek
 ##### Kenapa: Lingkungan Conda perlu dibuat agar tidak bentrok dengan proyek lain (dependesi)
@@ -81,7 +85,10 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 #### Do: Berikan nama lingkungan yang relevan
 #### Dont: Jangan intall semua paket, tapi install sesuai kebutuhan
 
+-----
+
 ### Setup (Aktivasi) UV
+-----
 #### A. Install UV
 ##### install UV dengan mengetikan di command prompt pip install uv
 ##### Jika berhasil versi UV akan tampil dan ada keterangan sukses
@@ -106,6 +113,8 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 
 #### Dos: Pastikan direktorinya jelas dan UV aktif saat install librari
 #### Donts: Jangan install paket librari yang tidak dibutuhkan
+
+-----
 
 ## Kesimpulan
 
