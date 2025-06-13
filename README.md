@@ -1,7 +1,5 @@
 # Tutorial Setup Anaconda & UV
-**Nama** : Doni Wahyudi  
-**No. Absen** : 9.043.DB2025
----
+
 Halo Semua!👋 <br>
 Buat teman-teman yang lagi belajar coding pake Python, ada Tools yang menarik nih buat kita coba dan pastinya nanti bakal kepake saat kita udah mulai ngebuat project, yaitu : <br> **Anaconda** dan **UV**
 <br>Waduh apaan tuh? Kok ada jenis uler lain lagi selain python, dan yang satu nya lagi namanya kaya sinar dari matahari 🤔
