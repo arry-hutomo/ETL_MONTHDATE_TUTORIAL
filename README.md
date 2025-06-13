@@ -44,9 +44,9 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 8. Klik "Install" dan tunggu selesai.
 ![proses_intalasi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/berhasil%20install%202.png)
 
-DOs: Centang PATH pada proses Instalasi, lakukan setup PATH secara manual
+**DOs**: Centang PATH pada proses Instalasi, lakukan setup PATH secara manual
 
-Don'ts: Jangan lakukan double instalasi
+**Don'ts**: Jangan lakukan double instalasi
 
 ---
 
