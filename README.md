@@ -75,13 +75,15 @@ Jadi kalau tanpa menggunakan anaconda atau uv, kita bakal agak kesulitan ketika 
 
 - Pilih lokasi instalasi nya, kemudian klik `Next >`  
 ![alt text](assets\image6.png)
+
 > ❗lokasi instalasi nya pakai yang default aja di C:\Users\{nama_user_kita}\anaconda3
 
 - Pastikan di centang:
     - ✅Add Ananconda3 to my PATH environment variable
     - ✅Register Anaconda3 as my default Python 3.12
 
-  ![alt text](assets\image7.png)
+![alt text](assets\image7.png)
+
   > ❗Ikuti setiap step by step nya dengan sesuai agar instalasi nya berjalan dengan lancar, tapi kalau kamu sudah paham ya boleh-boleh aja buat di custom
 - Klik `Install` dan tunggu sampai selesai 💯
 - Buka command prompt (cmd) dan ketik `conda --version`
