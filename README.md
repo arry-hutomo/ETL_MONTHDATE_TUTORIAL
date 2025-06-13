@@ -93,7 +93,7 @@ Nonaktifkan lingkungan conda dengan mengetik pada command prompt conda deactivat
 ### Setup (Aktivasi) UV
 -----
 #### A. Install UV
-install UV dengan mengetikan di command prompt pip install uv
+Install UV dengan mengetikan di command prompt: pip install uv
 
 Jika berhasil versi UV akan tampil dan ada keterangan sukses
 
