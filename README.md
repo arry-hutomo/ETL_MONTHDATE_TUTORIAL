@@ -82,7 +82,7 @@ Jadi kalau tanpa menggunakan anaconda atau uv, kita bakal agak kesulitan ketika 
     - ✅Add Ananconda3 to my PATH environment variable
     - ✅Register Anaconda3 as my default Python 3.12
 
-![alt text](assets/image7.png)
+  ![alt text](assets/image7.png)
 
   > ❗Ikuti setiap step by step nya dengan sesuai agar instalasi nya berjalan dengan lancar, tapi kalau kamu sudah paham ya boleh-boleh aja buat di custom
 - Klik `Install` dan tunggu sampai selesai 💯
