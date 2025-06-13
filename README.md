@@ -94,6 +94,7 @@ Nonaktifkan lingkungan conda dengan mengetik pada command prompt conda deactivat
 -----
 #### A. Install UV
 install UV dengan mengetikan di command prompt pip install uv
+
 Jika berhasil versi UV akan tampil dan ada keterangan sukses
 
 ![instalasi_UV](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Install%20UV%20berhasil.png)
@@ -104,7 +105,8 @@ Tentukan direktori proyek yang akan digunakan, buat di command prompt dengan men
 ![aktivasi uv](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Inisialisasi%20UV%20(1).png)
 
 Buat lingkungan UV, ketik di command prompt: uv venv
-aktifkan dengan mengetikan: .venv\Scripts\activate
+
+Aktifkan dengan mengetikan: .venv\Scripts\activate
 
 #### C. Menginstall Paket Librari
 Ketikan uv add nama paket (contoh: uv add pandas)
