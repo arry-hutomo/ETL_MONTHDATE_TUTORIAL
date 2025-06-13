@@ -69,7 +69,7 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 ##### 2. pilih y
 
 #### B. Mengaktifkan Lingkungan Conda
-##### Aktifkan lingkan conda dengan mengetik pada command prompt conda activate name_env
+##### Aktifkan lingkungan conda dengan mengetik pada command prompt conda activate name_env
 
 ![aktivasi_conda](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Aktivasi%20conda%20(2).png)
 
