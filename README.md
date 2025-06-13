@@ -13,6 +13,8 @@
 ### 4. UV mampu mempercepat instalasi paket Python di dalam lingkungan Conda 
 ## Ketiganya memberikan kemudahan setup, fleksibilitas manajemen lingkungan, dan kecepatan eksekusi.
 
+----
+
 ## Langkah-langkah Setup ⚙️
 
 ### Setup Anaconda
@@ -26,13 +28,20 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 #### 2. Install dengan cara double klik
 #### 3. Klik "Next" pada layar sambutan.
 #### 4. Setujui syarat lisensi.
+
 ![lisensi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Centang%20Agreement.png)
+
 #### 5. Pilih "Just Me (recommended)".
 #### 6. Gunakan lokasi default (C:\Users\NAMA_ANDA\anaconda3).
+
 ![lokasi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Lokasi.png)
+
 #### 7. Centang:
-✓ Tambahkan Anaconda3 ke PATH.
-✓ Jadikan Anaconda3 sebagai Python 3.12 default.
+1. Tambahkan Anaconda3 ke PATH.
+2. Jadikan Anaconda3 sebagai Python 3.12 default.
+
+![centang](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Centang%20path.png)
+
 #### 8. Klik "Install" dan tunggu selesai.
 ![proses_intalasi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/berhasil%20install%202.png)
 
@@ -44,6 +53,7 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 #### 1. Buka command prompt
 #### 2. Ketik Conda --version
 #### 3. Output seperti conda 24.1.0 menunjukkan keberhasilan.
+
 ![berhasil](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/verifikasi%20anaconda.png)
 
 ### Setup (Aktivasi) Conda
