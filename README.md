@@ -63,8 +63,9 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 ### Setup (Aktivasi) Conda
 ----
 #### A. Membuat lingkungan baru Conda
-Apa: Lingkungan Conda merupakan ruang kerja sendiri untuk suatu proyek
-Kenapa: Lingkungan Conda perlu dibuat agar tidak bentrok dengan proyek lain (dependesi)
+**Apa:** Lingkungan Conda merupakan ruang kerja sendiri untuk suatu proyek
+
+**Kenapa:** Lingkungan Conda perlu dibuat agar tidak bentrok dengan proyek lain (dependesi)
 1. Pada command prompt ketik conda create -n name_env python=9.12 (pada contoh: test_4)
 2. pilih y
 
