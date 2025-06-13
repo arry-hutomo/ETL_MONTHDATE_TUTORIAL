@@ -48,9 +48,10 @@ Kamu bisa mengunduh instaler anaconda di web anaconda
 
 #### **DO:** Centang PATH pada proses Instalasi, lakukan setup PATH secara manual
 #### **Don't:** Jangan lakukan double instalasi
+---
 
 ### Verifikasi Anaconda
-
+----
 #### 1. Buka command prompt
 #### 2. Ketik Conda --version
 #### 3. Output seperti conda 24.1.0 menunjukkan keberhasilan.
