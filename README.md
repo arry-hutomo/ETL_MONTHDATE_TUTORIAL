@@ -10,6 +10,14 @@ Berikut adalah panduan lengkap untuk setup environment data science/AI menggunak
 
 **Anaconda** adalah distribusi open-source untuk bahasa pemrograman Python dan R, yang dirancang untuk komputasi ilmiah, analisis data, dan pembelajaran mesin. Anaconda menyederhanakan manajemen paket dan lingkungan, serta mendukung lebih dari 1.500 paket data science yang siap pakai.  
 
+Anaconda nggak hanya menyediain interpreter Python, tapi juga sejumlah pustaka keren seperti:
+- NumPy & Pandas: Buat olah dan analisis data.
+- Matplotlib: Buat visualisasi data yang kece.
+- SciPy & Scikit-learn: Buat analisis numerik dan pembelajaran mesin.
+Selain itu, ada juga alat-alat pendukung yang nggak kalah penting, kayak:
+- Jupyter Notebook: Biar kamu bisa interaktif coding dan coba-coba langsung.
+- Spyder: IDE buat coding Python yang nyaman.
+- Anaconda Navigator: GUI yang bikin kamu bisa ngatur environment dan install paket lewat klik-klik, tanpa harus repot dengan command line. 🚀💻
 **Conda** adalah manajer paket dan lingkungan yang disertakan dalam Anaconda. Conda memungkinkan pengguna untuk mengelola paket dan lingkungan secara efisien, menghindari konflik dependensi, dan memastikan konsistensi proyek.
 
 ---
