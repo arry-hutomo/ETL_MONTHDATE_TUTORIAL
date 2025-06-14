@@ -41,7 +41,7 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
   
 **Langkah-langkah:**
 
-1. Kunjungi **https://www.anaconda.com/download.**
+1. Kunjungi **https://www.anaconda.com/download/success**
 
    ![alt text](image/download_conda.png)
    
@@ -190,16 +190,18 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Langkah-langkah:**
 
-  1. Mengaktifkan Lingkungan, Ketik:
-    **conda activate venv/**
+  1. Mengaktifkan Lingkungan, Ketik :
+       
+        **conda activate venv/**
      
-  2. Prompt berubah ke (venv) C:\Users\NAMA_ANDA\ghost_intellix>.
+  3. Prompt berubah ke (venv) C:\Users\NAMA_ANDA\ghost_intellix>.
 
 
-  3. Me-Nonaktifkan Lingkungan, Ketik:
-    **conda deactivate**
+  4. Me-Nonaktifkan Lingkungan, Ketik:
      
-  4. Prompt berubah ke (venv) C:\Users\NAMA_ANDA\ghost_intellix>.
+      **conda deactivate**
+     
+  5. Prompt berubah ke (venv) C:\Users\NAMA_ANDA\ghost_intellix>.
 
 ---
 
@@ -214,14 +216,16 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 **Do and Don'ts:**
 
 **Do:** Pastikan lingkungan Conda tidak aktif.
+
 **Don't:** Jangan gunakan UV untuk paket khusus Conda.
 
 **Langkah-langkah:**
 
-  1. Pastikan lingkungan Conda tidak aktif (jalankan conda deactivate         jika perlu).
-  2. Ketik:
-      pip install uv
-
+  1. Pastikan lingkungan Conda tidak aktif (jalankan conda deactivate jika perlu).
+  2. Ketik :
+       **pip install uv**
+     
+  
       ![alt text](image/UV1.png)
      
   4. Output seperti **Successfully installed uv-0.7.13** menunjukkan keberhasilan.
@@ -242,20 +246,61 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 **Don't:** Jangan inisialisasi di direktori proyek lain.
 
 **Langkah-langkah:**
+ 1. Ketik:
 
-    1. Ketik:
+     
+        
         uv init ghost_intellixuv
 
    ![alt text](image/UV2.png)  
-   
        Kemudian :
+       
         cd ghost_intellixuv
 
   ![alt text](image/UV3.png) 
-       
     2. Output menunjukkan proyek diinisialisasi di    
     
     C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv.
+
+---
+
+Menginstal Paket dengan UV
+Apa: UV menginstal paket dengan cepat menggunakan antarmuka pip.
+
+Kenapa: Kecepatan UV menghemat waktu untuk dependensi besar.
+
+Do and Don'ts:
+
+Do: Gunakan uv add.
+Don't: Jangan campur UV dan pip.
+Langkah-langkah:
+
+Ketik:
+uv add pandas
+Output seperti:
+Resolved 7 packages in 244ms
+Installed 6 packages in 663ms
+ + numpy==2.3.0
+ + pandas==2.3.0
+ + python-dateutil==2.9.0.post0
+ + pytz==2025.2
+ + six==1.17.0
+ + tzdata==2025.2
+Catatan: UV lebih cepat untuk pohon dependensi besar.
+5.5 Menonaktifkan Lingkungan UV
+Apa: Menonaktifkan mengembalikan ke lingkungan global.
+
+Kenapa: Ini mencegah perubahan tak sengaja.
+
+Do and Don'ts:
+
+Do: Nonaktifkan setelah selesai.
+Don't: Jangan biarkan aktif.
+Langkah-langkah:
+
+Ketik:
+.venv\Scripts\deactivate
+Prompt kembali ke C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv>.
 
     
      
