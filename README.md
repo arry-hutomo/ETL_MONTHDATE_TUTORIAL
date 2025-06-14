@@ -342,7 +342,7 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 Buat **requirements.txt:**
 
-![alt text](daftar_paket.png)
+  ![alt text](image/daftar_paket.png)
 
 Instal:
 
