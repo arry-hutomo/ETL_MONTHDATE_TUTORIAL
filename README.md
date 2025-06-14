@@ -1,6 +1,6 @@
 # Panduan Lengkap Setup Anaconda & UV Environment untuk Data Science/AI
 Panduan lengkap untuk setup lingkungan Python dengan Anaconda &amp; UV. Anaconda menyediakan ratusan paket siap pakai untuk komputasi ilmiah &amp; analisis data, sementara UV adalah alat manajemen paket berbasis Rust yang cepat untuk lingkungan virtual &amp; instalasi dependensi. Cocok untuk pemula dalam proyek AI/ML. 🚀
-![CONDAUV](https://github.com/arry-hutomo/ETL_MONTHDATE_TUTORIAL/blob/main/CONDA%20UV%20ENVIRONMENTs.png)
+![CONDAUV](image/tutorial_setup.png)
 
 ### 🌱 Latar Belakang Pentingnya dalam Proyek AI dan ML
 
@@ -21,16 +21,12 @@ Memastikan konsistensi dan reproduktibilitas hasil. 🔄
 Mengelola dependensi secara efisien, terutama pada proyek kompleks. ⚙️
 Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawatir masalah teknis lingkungan, sehingga meningkatkan produktivitas dan kualitas proyek. ⏳
 
-🛠️ Cara Penggunaan
-
-Silakan ikuti panduan terperinci yang terdapat dalam file utama:
-
-
 ---
 
-## Panduan Setup (Conda dan UV Virtual Environments).html 📑
+## 🛠️ Panduan Setup (Conda dan UV Virtual Environments) 📑
 
-## **Instalasi Anaconda**
+## Bagian 1 : **Instalasi Anaconda**
+
 
 ### **1. Mengunduh Anaconda**
 
@@ -46,8 +42,11 @@ Silakan ikuti panduan terperinci yang terdapat dalam file utama:
 **Langkah-langkah:**
 
 1. Kunjungi **https://www.anaconda.com/download.**
-2. Pilih penginstal: **Windows Python 3.12 64-Bit Graphical Installer (921.3MB).**
-3. **Simpan file di Desktop** atau folder Unduhan.
+
+   ![alt text](image/download_conda.png)
+   
+3. Pilih penginstal: **Windows Python 3.12 64-Bit Graphical Installer (921.3MB).**
+4. **Simpan file di Desktop** atau folder Unduhan.
 
 ### **2. Proses Instalasi**
 
@@ -117,14 +116,146 @@ Silakan ikuti panduan terperinci yang terdapat dalam file utama:
 
 **Langkah-langkah:**
 
-1. Buka **Command Prompt**.
-2. Ketik dan eksekusi:
+  1. Buka **Command Prompt**.
+  2. Ketik dan eksekusi:
    **conda --version**
 
-![alt text](image/conda10.png)
+     ![alt text](image/conda10.png)
 
-Output seperti **conda 24.9.2** menunjukkan keberhasilan.
+  Output seperti **conda 24.9.2** menunjukkan keberhasilan.
+
+### 4. Konfigurasi Variabel Lingkungan PATH
+
+**Apa:** PATH memberi tahu sistem operasi lokasi program seperti Conda dan Python.
+
+**Kenapa:** Tanpa PATH yang benar, perintah Anaconda tidak dapat dijalankan dari terminal.
+
+**Do and Don'ts:**
+
+**Do:** Verifikasi semua jalur ditambahkan.
+
+**Don't:** Jangan hapus entri PATH lain.
+
+**Langkah-langkah:**
+
+  1. Tekan **Windows + R**, ketik **sysdm.cpl**, tekan **Enter**.
+  2. Pergi ke tab **"Advanced"**, klik **"Environment Variables"**.
+  3. Pilih **"Path"** di **"System variables"**, klik **"Edit"**.
+
+     ![alt text](image/conda11.png)
+   
+  4. Tambahkan (ganti **NAMA_ANDA**): C:\Users\NAMA_ANDA\anaconda
+
+      ![alt text](image/conda12.png)
+     
+  6. Klik **"OK"**, Selesai.
+
+---
+
+## Bagian 2 : Membuat Lingkungan Conda
+
+**Apa:** Lingkungan Conda adalah ruang terisolasi untuk Python dan paket proyek.
+
+**Kenapa:** Isolasi mencegah konflik versi paket, memastikan stabilitas.
+
+**Do and Don'ts:**
+
+**Do:** Beri nama lingkungan yang relevan.
+**Don't:** Jangan buat di direktori tidak terkait.
+
+**Langkah-langkah:**
+
+  1. Di terminal VS Code (Ctrl+`), ketik:
+     
+     **conda create -p venv python=3.9**
+
+     ![alt text](image/conda13.png)
+     
+  3. Ketik **y** saat diminta.
+
+     ![alt text](image/conda14.png)
+
+---
+
+## Bagian 3 : Mengaktifkan & Menaonaktifkan Lingkungan
+
+**Apa:** Aktivasi menggunakan Python dan paket dari lingkungan Conda.
+
+**Kenapa:** Ini memastikan perintah menggunakan lingkungan proyek, bukan dasar.
+
+**Do and Don'ts:**
+
+**Do:** Periksa prompt untuk konfirmasi aktivasi.
+**Don't:** Jangan jalankan perintah sebelum aktif.
+
+**Langkah-langkah:**
+
+  1. Mengaktifkan Lingkungan, Ketik:
+    **conda activate venv/**
+     
+  2. Prompt berubah ke (venv) C:\Users\NAMA_ANDA\ghost_intellix>.
 
 
+  3. Me-Nonaktifkan Lingkungan, Ketik:
+    **conda deactivate**
+     
+  4. Prompt berubah ke (venv) C:\Users\NAMA_ANDA\ghost_intellix>.
 
+---
 
+## Bagian 4 : Membuat UV Environment
+
+### 1. Menginstal UV
+
+**Apa:** UV adalah alat manajemen paket dan lingkungan berbasis Rust yang cepat.
+
+**Kenapa:** UV mempercepat instalasi paket, ideal untuk proyek dengan banyak dependensi.
+
+**Do and Don'ts:**
+
+**Do:** Pastikan lingkungan Conda tidak aktif.
+**Don't:** Jangan gunakan UV untuk paket khusus Conda.
+
+**Langkah-langkah:**
+
+  1. Pastikan lingkungan Conda tidak aktif (jalankan conda deactivate         jika perlu).
+  2. Ketik:
+      pip install uv
+
+      ![alt text](image/UV1.png)
+     
+  4. Output seperti **Successfully installed uv-0.7.13** menunjukkan keberhasilan.
+
+#### Catatan tentang folder ghost_intellixuv: Folder ghost_intellixuv akan dibuat di langkah berikutnya (5.2) menggunakan uv init. Perintah ini otomatis membuat folder jika belum ada, karena UV dirancang untuk menginisialisasi direktori proyek baru secara langsung. Anda tidak perlu membuat folder ini secara manual sebelum menjalankan uv init. Untuk memverifikasi folder setelah inisialisasi, ketik dir di CMD untuk melihat daftar direktori.
+
+---
+
+### 2 Menginisialisasi Proyek UV
+
+**Apa:** Inisialisasi membuat struktur proyek UV.
+
+**Kenapa:** Ini menyiapkan direktori proyek dan lingkungan virtual.
+
+**Do and Don'ts:**
+
+**Do:** Gunakan nama proyek yang jelas.
+**Don't:** Jangan inisialisasi di direktori proyek lain.
+
+**Langkah-langkah:**
+
+    1. Ketik:
+        uv init ghost_intellixuv
+
+   ![alt text](image/UV2.png)  
+   
+       Kemudian :
+        cd ghost_intellixuv
+
+  ![alt text](image/UV3.png) 
+       
+    2. Output menunjukkan proyek diinisialisasi di    
+    
+    C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv.
+
+    
+     
