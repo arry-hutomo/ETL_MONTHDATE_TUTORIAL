@@ -27,7 +27,7 @@ Analogi nya kaya kontrakan yang masih kosong belum ada apa-apa dan nanti kita ya
 - ✅ Programmer/ developer yang butuh performa biar program nya cepat dan ringan
 - ✅ Ukurannya kecil dan setup nya cepat
 - ✅ Kita bisa tentuin library apa aja yang mau kita pakai sesuai kebutuhan
-
+---
 ## Part 2. Perbedaan Anaconda dan UV
 Kapan kita pake anaconda, kapan kita pake UV? <br>
 Jawabannya bisa kita liat lewat tabel ini 👇
@@ -39,8 +39,8 @@ Jawabannya bisa kita liat lewat tabel ini 👇
 | 🐢 Ukuran | Berat (ukuran besar, banyak isi) | Ringan dan super cepat |
 | 📦 Instalasi package | Lewat `conda install` | Lewat `uv add` |
 📈 Performa | Lambat saat install | Cepat banget! |
-
-## Kegunaan Anaconda dan UV
+---
+## Part 3. Kegunaan Anaconda dan UV
 Kenapa kita perlu pakai anaconda atau UV? Bukannya kita bisa tinggal langsung aja install library yg kita mau pake pip?
 <br>
 Memang betul, kita bisa install langsung, tapi ada banyak manfaat kalo kita pakai ini:
@@ -53,7 +53,8 @@ Bisa atur versi package sesuai proyek masing-masing, ga perlu pusing semisal nan
 
 Jadi kalau tanpa menggunakan anaconda atau uv, kita bakal agak kesulitan ketika ngerjain project yang banyak dan menggunakan library/package yang berbeda-beda.
 
-## Cara Pengunaan
+---
+## Part 4. Cara Pengunaan
 ### 🐍 Anaconda
 #### Step 1 : Download
 - Kamu bisa download Anaconda di web resmi nya 👉[disini](https://www.anaconda.com/download)👈
@@ -61,7 +62,7 @@ Jadi kalau tanpa menggunakan anaconda atau uv, kita bakal agak kesulitan ketika 
 > [!TIP]
 > Pas bagian ini bisa di skip registration aja, atau kalo mau dapet penawaran dari anaconda nya boleh-boleh aja di submit email nya (supaya email nya ga sepi 😏)
 
-- Selanjutnya klik `Download` sesuai OS laptop kamu dan tunggu sampai proses download selesai (ukurannya 912 MB)
+- Selanjutnya klik `Download` sesuai OS laptop kamu dan tunggu sampai proses download selesai (ukurannya 912 MB)<br>
 ![alt text](assets/image2.png)
 > [!NOTE]
 > Pastiin kuota kamu cukup atau cari tempat yang ada WiFi nya, bisa juga minta tethering ke temen (tapi diem2 aja 😆)  
@@ -97,7 +98,9 @@ Setelah selesai instalasi nya, selanjutnya kita bisa langsung buat environment y
 conda create --name {namaprojectmu} python=3.9.13
 ```
 ![alt text](assets/image8.png)
-- saat proses, akan ada permintaan persetujuan tentang apa saja yang akan di install, ketik `y` untuk melanjutkan  
+- saat proses, akan ada permintaan persetujuan tentang apa saja yang akan di install, ketik `y` untuk melanjutkan
+<br>
+
 ![alt text](assets/image9.png)
 
 - setelah selesai, kamu bisa menggunakan environment tadi dengan mengetik:
