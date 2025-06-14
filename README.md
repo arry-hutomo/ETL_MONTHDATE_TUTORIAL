@@ -34,7 +34,7 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** Mengunduh Anaconda memberikan akses ke alat-alat penting untuk Data Science tanpa instalasi paket manual. Ini memastikan kompatibilitas dan menghemat waktu.
 
-**Do and Don'ts:**
+
 
 - **Do:** Pilih Python 3.12 untuk kompatibilitas maksimal.
 - **Don't:** Hindari versi 32-bit kecuali perangkat Anda tidak mendukung 64-bit.
@@ -54,7 +54,7 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** Instalasi yang benar memungkinkan Anaconda terintegrasi dengan sistem, sehingga perintah Conda dan Python dapat diakses dari terminal.
 
-**Do and Don'ts:**
+
 
 - **Do:** Centang opsi untuk menambahkan Anaconda ke PATH.
 - **Don't:** Jangan ubah lokasi instalasi default tanpa alasan kuat.
@@ -109,16 +109,13 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** Ini mendeteksi masalah seperti PATH yang salah, memungkinkan perbaikan dini.
 
-**Do and Don'ts:**
-
-**Do:** Buka terminal baru untuk menerapkan perubahan PATH.
-**Don't:** Jangan abaikan pesan kesalahan.
+- **Do:** Buka terminal baru untuk menerapkan perubahan PATH.
+- **Don't:** Jangan abaikan pesan kesalahan.
 
 **Langkah-langkah:**
 
   1. Buka **Command Prompt**.
-  2. Ketik dan eksekusi:
-   **conda --version**
+  2. Ketik dan eksekusi:   **conda --version**
 
      ![alt text](image/conda10.png)
 
@@ -130,11 +127,10 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** Tanpa PATH yang benar, perintah Anaconda tidak dapat dijalankan dari terminal.
 
-**Do and Don'ts:**
 
-**Do:** Verifikasi semua jalur ditambahkan.
 
-**Don't:** Jangan hapus entri PATH lain.
+- **Do:** Verifikasi semua jalur ditambahkan.
+- **Don't:** Jangan hapus entri PATH lain.
 
 **Langkah-langkah:**
 
@@ -158,10 +154,10 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** Isolasi mencegah konflik versi paket, memastikan stabilitas.
 
-**Do and Don'ts:**
 
-**Do:** Beri nama lingkungan yang relevan.
-**Don't:** Jangan buat di direktori tidak terkait.
+
+- **Do:** Beri nama lingkungan yang relevan.
+- **Don't:** Jangan buat di direktori tidak terkait.
 
 **Langkah-langkah:**
 
@@ -183,10 +179,10 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** Ini memastikan perintah menggunakan lingkungan proyek, bukan dasar.
 
-**Do and Don'ts:**
 
-**Do:** Periksa prompt untuk konfirmasi aktivasi.
-**Don't:** Jangan jalankan perintah sebelum aktif.
+
+- **Do:** Periksa prompt untuk konfirmasi aktivasi.
+- **Don't:** Jangan jalankan perintah sebelum aktif.
 
 **Langkah-langkah:**
 
@@ -213,11 +209,8 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 **Kenapa:** UV mempercepat instalasi paket, ideal untuk proyek dengan banyak dependensi.
 
-**Do and Don'ts:**
-
-**Do:** Pastikan lingkungan Conda tidak aktif.
-
-**Don't:** Jangan gunakan UV untuk paket khusus Conda.
+- **Do:** Pastikan lingkungan Conda tidak aktif.
+- **Don't:** Jangan gunakan UV untuk paket khusus Conda.
 
 **Langkah-langkah:**
 
@@ -234,21 +227,19 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 ---
 
-### 2 Menginisialisasi Proyek UV
+### 2. Menginisialisasi Proyek UV
 
 **Apa:** Inisialisasi membuat struktur proyek UV.
 
 **Kenapa:** Ini menyiapkan direktori proyek dan lingkungan virtual.
 
-**Do and Don'ts:**
 
-**Do:** Gunakan nama proyek yang jelas.
-**Don't:** Jangan inisialisasi di direktori proyek lain.
+- **Do:** Gunakan nama proyek yang jelas.
+- **Don't:** Jangan inisialisasi di direktori proyek lain.
 
 **Langkah-langkah:**
  1. Ketik:
-
-     
+  
         
         uv init ghost_intellixuv
 
@@ -264,43 +255,137 @@ Pengaturan ini memungkinkan pengembang fokus pada pengembangan model tanpa khawa
 
 ---
 
-Menginstal Paket dengan UV
-Apa: UV menginstal paket dengan cepat menggunakan antarmuka pip.
+### 3. Menginstal Paket dengan UV
 
-Kenapa: Kecepatan UV menghemat waktu untuk dependensi besar.
+**Apa:** UV menginstal paket dengan cepat menggunakan antarmuka pip.
 
-Do and Don'ts:
+**Kenapa:** Kecepatan UV menghemat waktu untuk dependensi besar.
 
-Do: Gunakan uv add.
-Don't: Jangan campur UV dan pip.
-Langkah-langkah:
 
-Ketik:
-uv add pandas
-Output seperti:
-Resolved 7 packages in 244ms
-Installed 6 packages in 663ms
- + numpy==2.3.0
- + pandas==2.3.0
- + python-dateutil==2.9.0.post0
- + pytz==2025.2
- + six==1.17.0
- + tzdata==2025.2
-Catatan: UV lebih cepat untuk pohon dependensi besar.
-5.5 Menonaktifkan Lingkungan UV
-Apa: Menonaktifkan mengembalikan ke lingkungan global.
+- **Do:** Gunakan uv add.
+- **Don't:** Jangan campur UV dan pip.
 
-Kenapa: Ini mencegah perubahan tak sengaja.
+**Langkah-langkah:**
 
-Do and Don'ts:
+  1. Ketik:
+     
+      uv add pandas
 
-Do: Nonaktifkan setelah selesai.
-Don't: Jangan biarkan aktif.
-Langkah-langkah:
+![alt text](image/UV3.png)
 
-Ketik:
-.venv\Scripts\deactivate
-Prompt kembali ke C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv>.
+  2. Output seperti:
+    Resolved 7 packages in 244ms
+
+    Installed 6 packages in 663ms
+    
+     + numpy==2.3.0
+     + pandas==2.3.0
+     + python-dateutil==2.9.0.post0
+     + pytz==2025.2
+     + six==1.17.0
+     + tzdata==2025.2
+   
+**Catatan: UV lebih cepat untuk pohon dependensi besar.**
+
+---
+
+### 4. Menonaktifkan Lingkungan UV
+
+**Apa:** Menonaktifkan mengembalikan ke lingkungan global.
+
+**Kenapa:** Ini mencegah perubahan tak sengaja.
+
+
+
+- **Do:** Nonaktifkan setelah selesai.
+- **Don't:** Jangan biarkan aktif.
+
+**Langkah-langkah:**
+
+    1. Ketik: .venv\Scripts\deactivate
+    
+  ![alt text](image/UV4.png)
+
+    2. Prompt kembali ke C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv>.
+
+---
+
+### 5. Perbandingan Conda vs UV
+**Apa:** Perbandingan fitur Conda dan UV.
+
+**Kenapa:** Membantu memilih alat sesuai kebutuhan proyek.
+
+- **Do:** Gunakan Conda untuk ilmiah, UV untuk cepat.
+- **Don't:** Jangan campur keduanya tanpa alasan.
+
+
+| Fitur | **Anaconda**| **UV** |
+|----------|-------------|--------|
+| **Kecepatan Instalasi**| Sedang | Sangat Cepat |
+| **Manajemen Paket** | Terintegrasi | Kompatibel pip |
+| **Pembuatan Lingkungan** | conda create | uv venv |
+| **Aktivasi Lingkungan** | conda activate | .venv\Scripts\activate |
+| **Lintas Platform** | Ya | Ya |
+| **Terbaik Untuk** | Komputasi ilmiah | Pengembangan cepat |
+
+---
+
+### 6. Daftar Paket yang Direkomendasikan
+**Apa:** Paket penting untuk Data Science, Machine Learning, dan AI.
+
+**Kenapa:** Memastikan alat yang diperlukan tersedia.
+
+- **Do:** Perbarui versi paket secara berkala.
+- **Don't:** Jangan instal paket yang tidak diperlukan.
+
+**Langkah-langkah:**
+
+Buat **requirements.txt:**
+
+![alt text](daftar_paket.png)
+
+Instal:
+
+    uv add -r requirements.txt
+
+atau
+
+    pip install -r requirements.txt
+
+---
+
+### 7. Panduan Pemecahan Masalah
+**Apa:** Solusi untuk masalah umum selama pengaturan.
+
+**Kenapa:** Memecahkan masalah cepat meminimalkan hambatan.
+
+- **Do:** Catat pesan kesalahan.
+- **Don't:** Jangan abaikan peringatan.
+
+**_Masalah 1: Perintah Conda Tidak Dikenali_**
+
+- **Gejala:** 'conda' is not recognized
+- **Solusi:** Verifikasi instalasi Anaconda.
+            Periksa PATH.
+            Jalankan conda init cmd.exe, mulai ulang terminal.
+
+**_Masalah 2: Aktivasi Lingkungan Gagal_**
+
+- **Gejala:** Script execution is disabled
+- **Solusi:** Jalankan PowerShell sebagai Administrator.
+            Ketik Set-ExecutionPolicy RemoteSigned.
+            Pilih "Y".
+            
+**_Masalah 3: Kesalahan Instalasi Paket_**
+
+- **Gejala:** Could not find a version
+- **Solusi:** Perbarui pip: python -m pip install --upgrade pip.
+            Periksa kompatibilitas Python.
+            Coba versi paket lain.
+
+---
+_Happy Coding_
+
 
     
      
