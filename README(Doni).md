@@ -1,5 +1,7 @@
 # Tutorial Setup Anaconda & UV
-
+**Nama** : Doni Wahyudi  
+**No. Absen** : 9.043.DB2025
+---
 Halo Semua!👋 <br>
 Buat teman-teman yang lagi belajar coding pake Python, ada Tools yang menarik nih buat kita coba dan pastinya nanti bakal kepake saat kita udah mulai ngebuat project, yaitu : <br> **Anaconda** dan **UV**
 <br>Waduh apaan tuh? Kok ada jenis uler lain lagi selain python, dan yang satu nya lagi namanya kaya sinar dari matahari 🤔
@@ -27,7 +29,7 @@ Analogi nya kaya kontrakan yang masih kosong belum ada apa-apa dan nanti kita ya
 - ✅ Programmer/ developer yang butuh performa biar program nya cepat dan ringan
 - ✅ Ukurannya kecil dan setup nya cepat
 - ✅ Kita bisa tentuin library apa aja yang mau kita pakai sesuai kebutuhan
----
+
 ## Part 2. Perbedaan Anaconda dan UV
 Kapan kita pake anaconda, kapan kita pake UV? <br>
 Jawabannya bisa kita liat lewat tabel ini 👇
@@ -39,8 +41,8 @@ Jawabannya bisa kita liat lewat tabel ini 👇
 | 🐢 Ukuran | Berat (ukuran besar, banyak isi) | Ringan dan super cepat |
 | 📦 Instalasi package | Lewat `conda install` | Lewat `uv add` |
 📈 Performa | Lambat saat install | Cepat banget! |
----
-## Part 3. Kegunaan Anaconda dan UV
+
+## Kegunaan Anaconda dan UV
 Kenapa kita perlu pakai anaconda atau UV? Bukannya kita bisa tinggal langsung aja install library yg kita mau pake pip?
 <br>
 Memang betul, kita bisa install langsung, tapi ada banyak manfaat kalo kita pakai ini:
@@ -53,40 +55,36 @@ Bisa atur versi package sesuai proyek masing-masing, ga perlu pusing semisal nan
 
 Jadi kalau tanpa menggunakan anaconda atau uv, kita bakal agak kesulitan ketika ngerjain project yang banyak dan menggunakan library/package yang berbeda-beda.
 
----
-## Part 4. Cara Pengunaan
+## Cara Pengunaan
 ### 🐍 Anaconda
 #### Step 1 : Download
 - Kamu bisa download Anaconda di web resmi nya 👉[disini](https://www.anaconda.com/download)👈
 ![alt text](assets/image.png)
-> [!TIP]
-> Pas bagian ini bisa di skip registration aja, atau kalo mau dapet penawaran dari anaconda nya boleh-boleh aja di submit email nya (supaya email nya ga sepi 😏)
+>✔️ Pas bagian ini bisa di skip registration aja, atau kalo mau dapet penawaran dari anaconda nya boleh-boleh aja di submit email nya (supaya email nya ga sepi 😏)
 
-- Selanjutnya klik `Download` sesuai OS laptop kamu dan tunggu sampai proses download selesai (ukurannya 912 MB)<br>
+- Selanjutnya klik `Download` sesuai OS laptop kamu dan tunggu sampai proses download selesai (ukurannya 912 MB)
 ![alt text](assets/image2.png)
-> [!NOTE]
-> Pastiin kuota kamu cukup atau cari tempat yang ada WiFi nya, bisa juga minta tethering ke temen (tapi diem2 aja 😆)  
+> ✔️ Pastiin kuota kamu cukup atau cari tempat yang ada WiFi nya, bisa juga minta tethering ke temen (tapi diem2 aja 😆)  
 #### Step 2 : Instalasi
-- Setelah selesai di download, buka file tadi yang namanya `Anaconda3-2024.10-1-Windows-x86_64`, <br>terus klik `Next >`<br>
+- Setelah selesai di download, buka file tadi yang namanya `Anaconda3-2024.10-1-Windows-x86_64`, terus klik `Next >`
 ![alt text](assets/image3.png)
-- Kemudian klik `I Agree`<br>
+- Kemudian klik `I Agree`
 ![alt text](assets/image4.png)
-- Abis itu klik `Just Me (recommended)`  
-![alt text](assets/image5.png)  
+- Abis itu klik `Just Me (recommended)`
+![alt text](assets/image5.png)
 
-- Pilih lokasi instalasi nya, kemudian klik `Next >`<br>
-- ![alt text](assets/image6.png)
+- Pilih lokasi instalasi nya, kemudian klik `Next >`  
+![alt text](assets/image6.png)
 
-> [!NOTE]
-> lokasi instalasi nya pakai yang default aja di C:\Users\{nama_user_kita}\anaconda3
+> ❗lokasi instalasi nya pakai yang default aja di C:\Users\{nama_user_kita}\anaconda3
 
 - Pastikan di centang:
     - ✅Add Ananconda3 to my PATH environment variable
     - ✅Register Anaconda3 as my default Python 3.12
 
-![alt text](assets/image7.png)
-> [!Caution]
-> Ikuti setiap step by step nya dengan sesuai agar instalasi nya berjalan dengan lancar, tapi kalau kamu sudah paham ya boleh-boleh aja buat di custom
+  ![alt text](assets/image7.png)
+
+  > ❗Ikuti setiap step by step nya dengan sesuai agar instalasi nya berjalan dengan lancar, tapi kalau kamu sudah paham ya boleh-boleh aja buat di custom
 - Klik `Install` dan tunggu sampai selesai 💯
 - Buka command prompt (cmd) dan ketik `conda --version`
 - kalau muncul output seperti `conda 24.9.2` berarti instalasi berhasil ✅
@@ -98,9 +96,7 @@ Setelah selesai instalasi nya, selanjutnya kita bisa langsung buat environment y
 conda create --name {namaprojectmu} python=3.9.13
 ```
 ![alt text](assets/image8.png)
-- saat proses, akan ada permintaan persetujuan tentang apa saja yang akan di install, ketik `y` untuk melanjutkan
-<br>
-
+- saat proses, akan ada permintaan persetujuan tentang apa saja yang akan di install, ketik `y` untuk melanjutkan  
 ![alt text](assets/image9.png)
 
 - setelah selesai, kamu bisa menggunakan environment tadi dengan mengetik:
