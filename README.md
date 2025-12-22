@@ -1,3 +1,30 @@
+# Setup Anaconda, Conda, dan UV
+----
+## 🚀 Intro 
+
+**Anaconda** merupakan platform distribusi project data science, machine leaning, dan AI dalam bahasa pemrograman pyhton dan R. Sedangkan, **Conda** manajer paket dan lingkungan open-source yang merupakan bagian inti dari Anaconda. Meskipun sering dikaitkan dengan Anaconda, Conda juga bisa digunakan secara mandiri (misalnya melalui Miniconda, versi minimal Anaconda). Sementara itu, **UV** merupakan manajer paket Python modern yang relatif baru, dibangun dengan bahasa Rust. Berikut perbedaan ketiganya:
+
+![perbandingan](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/perbedaan%20anaconda%2C%20conda%2C%20UV.png)
+
+## 🌱 Kenapa Harus Ketiganya? 
+1. Ketiganya open-source.
+2. Anaconda menjadi pilihan karena ia menyediakan fondasi yang kokoh dan komprehensif library esensial yang lengkap.
+3. Conda mampu mengelola semua dependensi ini secara terpadu. 
+4. UV mampu mempercepat instalasi paket Python di dalam lingkungan Conda.
+## Ketiganya memberikan kemudahan setup, fleksibilitas manajemen lingkungan, dan kecepatan eksekusi.
+
+----
+
+## ⚙️ Langkah-langkah Setup 
+
+### Setup Anaconda
+---
+Kamu bisa mengunduh instaler anaconda di web anaconda
+![web_anaconda](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/web%20anaconda.png)
+
+1. Unduh installer Anaconda3-2024.10-1-Windows-x86_64.exe.
+
+![installer](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/instalaser%20anaconda.png)
 
 # 📚 Panduan Lengkap Setup Anaconda & UV Environment untuk Data Science/AI
 
@@ -144,201 +171,109 @@ UV adalah alat manajemen lingkungan Python yang memungkinkan pembuatan, pengelol
     Don'ts:
     - Jangan install semua paket di environment base.
 
+2. Install dengan cara double klik
+3. Klik "Next" pada layar sambutan.
+4. Setujui syarat lisensi.
+
+![lisensi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Centang%20Agreement.png)
+
+5. Pilih "Just Me (recommended)".
+6. Gunakan lokasi default (C:\Users\NAMA_ANDA\anaconda3).
+
+![lokasi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Lokasi.png)
+
+7. Centang Anaconda3 ke PATH.
+
+![centang](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Centang%20path.png)
+
+8. Klik "Install" dan tunggu selesai.
+
+![proses_intalasi](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/berhasil%20install%202.png)
+
+**DOs**: Centang PATH pada proses Instalasi, lakukan setup PATH secara manual
+
+**Don'ts**: Jangan lakukan double instalasi
 
 ---
 
-## 🧪 Bagian 2: Membuat UV Environment
+### Verifikasi Anaconda
+----
+1. Buka command prompt
+2. Ketik Conda --version
+3. Output seperti conda 24.1.0 menunjukkan keberhasilan.
 
-**1. Buat Environment Baru**
+![berhasil](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/verifikasi%20anaconda.png)
 
-    **Apa**
-    Membuat environment terisolasi untuk proyek UV.
-    
-    **Kenapa**
-    Agar dependensi proyek tidak bentrok dengan proyek lain.
+----
 
-    Langkah-langkah:
-    1.	Pastikan lingkungan Conda tidak aktif (jalankan conda deactivate jika perlu).
-    2.	Ketik: pip install uv
-    3.	Output seperti Successfully installed uv-0.7.12 menunjukkan keberhasilan.
-    4.	Catatan tentang folder ghost_intellixuv: Folder ghost_intellixuv akan dibuat di langkah berikutnya  menggunakan uv init. Perintah ini otomatis membuat folder jika belum ada, karena UV dirancang untuk menginisialisasi direktori proyek baru secara langsung. Anda tidak perlu membuat folder ini secara manual sebelum menjalankan uv init. Untuk memverifikasi folder setelah inisialisasi, ketik dir di CMD untuk melihat daftar direktori.
+### Setup (Aktivasi) Conda
+----
+#### A. Membuat lingkungan baru Conda
+**Apa:** Lingkungan Conda merupakan ruang kerja sendiri untuk suatu proyek
 
-![image](https://github.com/user-attachments/assets/a5a483b1-87a4-4c7e-90ce-dcf3ee9943a7)
+**Kenapa:** Lingkungan Conda perlu dibuat agar tidak bentrok dengan proyek lain (dependesi)
+1. Pada command prompt ketik conda create -n name_env python=9.12 (pada contoh: test_4)
+2. pilih y
 
-    Do's:
-    - Beri nama environment yang deskriptif
-    - Gunakan versi Python yang kompatibel
-    Don'ts:
-    - Jangan gunakan environment base untuk proyek
-    - Jangan membuat terlalu banyak environment yang tidak perlu
+#### B. Mengaktifkan Lingkungan Conda
+Aktifkan lingkungan conda dengan mengetik pada command prompt conda activate name_env
 
-**2. Menginisialisasi Proyek UV**
+![aktivasi_conda](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Aktivasi%20conda%20(2).png)
 
-    **Apa?**
-    Menginisialisasi Proyek UV adalah proses mempersiapkan struktur direktori dan file konfigurasi dasar untuk proyek yang akan menggunakan UV environment. Ini termasuk membuat file requirements, struktur folder, dan konfigurasi dasar proyek.
-    
-    **Kenapa?**
-    Inisialisasi proyek yang benar membantu menjaga konsistensi struktur proyek, memudahkan kolaborasi tim, dan memastikan semua dependensi terkelola dengan baik. Ini juga mempermudah deployment dan reproduksi environment di mesin lain.
-   
-    Langkah-langkah:
-    1. Pastikan environment UV sudah aktif
-    2. Ketik: uv init ghost_intellixuv
-               Cd ghost intellixuv
-    3. Output menunjukkan proyek diinisialisasi di C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv.
+#### C. Menginstall Paket
+Install paket library sesuai kebutuhan, pada command prompt ketik pip install pandas (contoh: pandas)
 
-![image](https://github.com/user-attachments/assets/17276dad-204c-4b2c-a3ef-e68214691642)
- 
-    Do's:
-    - Gunakan struktur folder yang konsisten
-    - Dokumentasikan semua dependensi di requirements.txt
-    - Buat README.md yang jelas
-    - Gunakan virtual environment untuk setiap proyek	
+![install_paket](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/install%20paket%20conda.png)
 
-    Don'ts:
-    - Jangan mencampur file proyek dengan file personal
-    - Jangan lupa menambahkan environment ke .gitignore
-    - Jangan menyimpan data sensitif di direktori proyek
-    - Jangan mengubah struktur folder setelah proyek berjalan
+#### D. Menonaktifkan Lingkungan Conda
+Nonaktifkan lingkungan conda dengan mengetik pada command prompt conda deactivate
 
-**4. Install Paket yang Dibutuhkan**
+![nonaktif_conda](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/deaktivasi%20conda.png)
 
-    **Apa?**
-    Memasang library yang diperlukan untuk proyek UV.
-    
-    **Kenapa?** 
-    Untuk mendapatkan fungsi-fungsi yang dibutuhkan dalam pengembangan.
-    
-    Langkah-langkah:
-    1.	Ketik: uv add pandas
+**Do:** Berikan nama lingkungan yang relevan
+**Dont:** Jangan intall semua paket, tapi install sesuai kebutuhan
 
-![image](https://github.com/user-attachments/assets/61291641-7c48-4db3-b2b4-21958b056d76)
+-----
 
-    Do's:
-    - Install hanya paket yang diperlukan
-    - Periksa versi paket yang kompatibel
-    Don'ts:
-    - Jangan install paket di environment base
-    - Jangan install paket tanpa memeriksa dependensinya
-    - Jangan campur UV dan pip.
+### Setup (Aktivasi) UV
+-----
+#### A. Install UV
+Install UV dengan mengetikan di command prompt: pip install uv
 
- 
-**5. Menonaktifkan Lingkungan UV**
- 
-    **Apa?**
-    Nonaktifkan environment uv_env apabila sudah selesai menggunakan.
-    
-    **Kenapa?**
-    Agar shell kembali ke environment base atau default.
+Jika berhasil versi UV akan tampil dan ada keterangan sukses
 
-    Langkah-langkah:
-    1.	Ketik: .venv\Scripts\deactivate
-    2.	Prompt kembali ke C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv>.
+![instalasi_UV](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Install%20UV%20berhasil.png)
 
-![image](https://github.com/user-attachments/assets/6017c6a5-06bb-4376-8248-d46fae0aece4)
+#### B. Menginisialisasi Proyek dalam UV
+Tentukan direktori proyek yang akan digunakan, buat di command prompt dengan mengetikan init nama_direk
 
-    Do's:
-    - Selalu deactivate ketika berpindah konteks.
+![aktivasi uv](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Inisialisasi%20UV%20(1).png)
 
-    Don'ts:
-    - Jangan tinggal aktif tanpa alasan.
-    
-  
-**6. Perbandingan Conda vs UV**	
+Buat lingkungan UV, ketik di command prompt: uv venv
 
-    **Apa?**
-    Membandingkan manajemen environment Conda dengan framework UV (asumsi UV adalah sistem manajemen environment atau framework spesifik).
-    
-    **Kenapa?**
-    Agar memudahkan pemilihan tools sesuai kebutuhan.
-    
-    Detail:
-    - Conda: manajemen environment dan paket secara umum, lintas proyek.
-    - UV: environment/framework yang lebih spesifik untuk proyek tertentu, mungkin terkait AI.
+Aktifkan dengan mengetikan: .venv\Scripts\activate
 
-![image](https://github.com/user-attachments/assets/d4e68cf5-e066-44b5-bfb6-f070e9b755f1)
+#### C. Menginstall Paket Librari
+Ketikan uv add nama paket (contoh: uv add pandas)
 
-    Do's:
-    - Gunakan Conda untuk manajemen environment yang luas.
-    - Gunakan UV jika spesifik proyek atau framework tersebut.
+#### D. Menonaktifkan Lingkungan UV
+ketikan .venv\Scripts\deactivate
 
-    Don'ts:
-    - Jangan mencampur konfigurasi environment yang berbeda tanpa sinkronisasi.
-    
-  
-**7. Daftar Paket yang Direkomendasikan untuk UV Environment**
-	
-     Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
-    - numpy
-    - pandas
-    - matplotlib
-    - scikit-learn
-    - jupyter
-    - seaborn
-    - tensorflow atau pytorch (sesuai kebutuhan)
+![aktivasi_dan_install](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/Aktivasi%20dan%20install%20paket.png)
 
-![image](https://github.com/user-attachments/assets/5020c54f-75e8-4036-b76f-d8882d712733)
+**Dos:** Pastikan direktorinya jelas dan UV aktif saat install librari
+**Donts:** Jangan install paket librari yang tidak dibutuhkan
 
-    Do's:
-    - Instal paket sesuai kebutuhan proyek.
-    - Update paket secara berkala.
+-----
 
-    Don'ts:
-    - Jangan instal paket yang tidak dikenal tanpa keperluan.
+## Kesimpulan
 
-  
+![anaconda,uv](https://github.com/Agus-Iskandar-D/ETL_MONTHDATE_TUTORIAL/blob/Tugas-Agus/anaconda%2C%20conda%2C%20UV.png)
 
-**8. Panduan Pemecahan Masalah pada Conda dan UV**
+Jika dianalogikan, **Anaconda** adalah Kota lengkap tempat para ilmuwan dan engineer data bekerja, sedangkan **Conda** adalah Manajer apartemen dan gudang di kota itu, yang mengatur lingkungan proyek agar tidak saling mengganggu dan memastikan semua alat bekerja sama. Semantara itu, **UV** adalah Kurir super cepat yang mengantar paket-paket Python dengan efisiensi dan kecepatan luar biasa.
 
-    Masalah umum dan solusinya:
-    Masalah 1: Perintah Conda Tidak Dikenali
-    Gejala: 'conda' is not recognized
-    Solusi:
-   	- Verifikasi instalasi Anaconda.
-   	- Periksa PATH.
-   	- Jalankan conda init cmd.exe, mulai ulang terminal.
-
-    Masalah 2: Aktivasi Lingkungan Gagal
-    Gejala: Script execution is disabled
-    Solusi:
-   	- Jalankan PowerShell sebagai Administrator.
-   	- Ketik Set-ExecutionPolicy RemoteSigned.
-   	- Pilih "Y".
-
-    Masalah 3: Kesalahan Instalasi Paket
-    Gejala: Could not find a version
-    Solusi:
-   	- Perbarui pip: python -m pip install --upgrade pip.
-   	- Periksa kompatibilitas Python.
-   	- Coba versi paket lain.
-
-    Do's:
-    - Selalu baca dokumentasi dan pesan error.
-    - Gunakan forum komunitas dan stackoverflow.
-
-    Don'ts:
-    - Jangan mengabaikan pesan error.
-    - Jangan memaksa instalasi tanpa verifikasi.
-
-
+### Dengan menggunakan ketiganya kita akan:
+1. Menghindari konflik versi antar paket. ✅
+2. Memastikan konsistensi dan reproduktibilitas hasil. 🔄
+3. Mengelola dependensi secara efisien, terutama pada proyek kompleks. ⚙️
 ---
-
-## 🔄 Bagian 3: Manajemen Environment
-
-Perintah-perintah Penting
-Berikut beberapa perintah penting untuk mengelola environment:
-
-![image](https://github.com/user-attachments/assets/5eec8061-abef-4564-b5eb-31bb6c6bcad6)
-
----
-
-## 🎯 Kesimpulan
-
-Anaconda ibarat kota besar yang terbagi menjadi gedung-gedung (environment) berbeda, masing-masing punya perabot (paket) sesuai keperluan penghuninya. Kamu sebagai penghuninya bisa masuk ke gedung sesuai pekerjaan, sehingga tidak tercampur dengan aktivitas di gedung lain.
-
-Dengan mengikuti panduan ini, Anda sekarang memiliki:
-
-- Anaconda terinstal di sistem
-- UV environment siap digunakan
-- Pengetahuan dasar manajemen environment
-
-Selamat mencoba! 🚀
